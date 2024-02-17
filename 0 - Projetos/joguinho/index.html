@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jogo Simples 2D</title>
+    <style>
+      #game {
+        position: relative;
+        height: 300px;
+        width: 500px;
+        border: 1px solid black;
+      }
+      .player {
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="game">
+      <div id="player" class="player" style="top: 0; left: 0"></div>
+    </div>
+
+    <script>
+      var player = document.getElementById("player");
+      var speed = 5;
+
+      window.addEventListener("keydown", function (e) {
+        var rect = player.getBoundingClientRect();
+        if (e.key == "ArrowUp" && rect.top > 0) {
+          player.style.top = rect.top - speed + "px";
+        } else if (e.key == "ArrowDown" && rect.bottom < window.innerHeight) {
+          player.style.top = rect.top + speed + "px";
+        } else if (e.key == "ArrowLeft" && rect.left > 0) {
+          player.style.left = rect.left - speed + "px";
+        } else if (e.key == "ArrowRight" && rect.right < window.innerWidth) {
+          player.style.left = rect.left + speed + "px";
+        }
+      });
+    </script>
+  </body>
+</html>
