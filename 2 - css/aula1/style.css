@@ -14,9 +14,13 @@ h1 {
   font-size: 20px;
   background-color: blanchedalmond;
 }
-
+h4 {
+  color: brown;
+  font-size: 19px;
+}
 button[type="submit"] {
   background-color: black;
+  color: white;
 }
 
 h4 {
