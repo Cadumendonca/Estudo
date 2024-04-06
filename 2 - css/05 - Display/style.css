@@ -1,0 +1,20 @@
+/* Inline: não quebra de linha, largura mínima */
+.inline {
+  display: inline;
+  margin-top: 100px;
+  margin-bottom: 200px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 20px;
+  padding-right: 40px;
+}
+
+.block {
+  display: block;
+  margin-top: 100px;
+  margin-bottom: 200px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 20px;
+  padding-right: 40px;
+}
